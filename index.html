@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="Imagens/logo-de-producao-de-cinema-criativo_23-2149509983.avif" type="image/x-icon">
+    <title>Top 5 - Filmes</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="Imagens/logo-de-producao-de-cinema-criativo_23-2149509983.avif" alt="Logo Filmes"
+                        class="logo-img" width="250px" height="200px">
+                </a>
+                <span class="logo-text">
+                    <a href="index.html">Filmes e Séries</a>
+                </span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="indicacoes.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-camera-reels" viewBox="0 0 16 16">
+                                    <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0M1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0" />
+                                    <path
+                                        d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm6 8.73V7.27l-3.5 1.555v4.35zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1" />
+                                    <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6M7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                                </svg> Outras Indicações
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="modo" class="nav-link" href="#">
+                                Alternar para Modo Escuro
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="series.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-tv" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5M13.991 3l.024.001a1.5 1.5 0 0 1 .538.143.76.76 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.5 1.5 0 0 1-.143.538.76.76 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.5 1.5 0 0 1-.538-.143.76.76 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.5 1.5 0 0 1 .143-.538.76.76 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2" />
+                                </svg> Séries
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="assistir.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-globe" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+                                </svg> Onde assistir?
+                            </a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <div class="container" id="cardContainer">
+        <h1> 5 Recomendações de Filmes</h1>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="Imagens/DarkKnightTrilha.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Batman Cavaleiro das Trevas - Sinopse</h5>
+                            <p class="card-text">Batman tem conseguido manter a ordem em Gotham com a ajuda de Jim Gordon e Harvey Dent. No entanto, um jovem e anárquico criminoso, conhecido apenas como Coringa, pretende testar o Cavaleiro das Trevas e mergulhar a cidade em um verdadeiro caos.</p>
+                            <h5 class="card-text"><button id="batman" class="btn btn-primary" type="submit"><a target="_blank" id="indicacoes" href="https://www.youtube.com/watch?v=EXeTwQWrcwY">Veja o Trailer</a></button></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="Imagens/ManOfSteel.jpg" alt="" width="414" height="414px">
+                    <div class="card-body">
+                        <h5 class="card-title">O Homem de Aço - Sinopse</h5>
+                            <p class="card-text">Com a iminente destruição de Krypton, seu planeta natal, Jor-El e sua mulher procuram preservar a raça enviando o filho recém-nascido para a Terra. A nave espacial da criança aterrissa na fazenda de Jonathan e Martha Kent, que o batizam de Clark e o criam como seu próprio filho. Apesar das habilidades extraordinárias levarem o Clark adulto a viver à margem da sociedade, ele precisa se tornar um herói para salvar aqueles que ama de uma terrível ameaça.</p>
+                            <h5 class="card-text"><button class="btn btn-primary" type="submit"><a target="_blank" id="indicacoes" href="https://www.youtube.com/watch?v=T6DJcgm3wNY">Veja o Trailer</a></button></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="Imagens/Star_Wars_Episódio_III_A_Vingança_dos_Sith.jpg" alt="" width="414" height="414px">
+                    <div class="card-body">
+                        <h5 class="card-title">Star Wars A Vingaça dos Sith - Sinopse</h5>
+                            <p class="card-text">As Guerras Clônicas estão em pleno andamento e Anakin Skywalker mantém um elo de lealdade com Palpatine, ao mesmo tempo em que luta para que seu casamento com Padmé Amidala não seja afetado por esta situação. Seduzido por promessas de poder, Anakin se aproxima cada vez mais de Darth Sidious até se tornar o temível Darth Vader. Juntos eles tramam um plano para aniquilar de uma vez por todas com os cavaleiros jedi.</p>
+                            <h5 class="card-text"><button id="starwars" class="btn btn-primary" type="submit"><a target="_blank" id="indicacoes" href="https://www.youtube.com/watch?v=5UnjrG_N8hU">Veja o Trailer</a></button></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="Imagens/5749668.webp" alt="" width="414" height="414px">
+                    <div class="card-body">
+                        <h5 class="card-title">Era Uma Vez Em Hollywood - Sinopse</h5>
+                            <p class="card-text">Em 1969, Rick Dalton é um ator de TV em declínio que tenta voltar à vida de fama e sucesso em Hollywood ao lado de seu amigo e dublê, Cliff Booth. No processo, eles cruzam com muitas pessoas influentes da indústria cinematográfica, como os novos vizinhos de Rick, o casal Sharon Tate e Roman Polanski, e acabam se envolvendo involuntariamente com a família Manson.</p>
+                            <h5 class="card-text"><button id="Hollywood" class="btn btn-primary" type="submit"><a target="_blank" id="indicacoes" href="https://www.youtube.com/watch?v=OYGUQmJlgiE">Veja o Trailer</a></button></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="Imagens/TheAmazingSpiderMan.png" alt="" width="414" height="414px">
+                    <div class="card-body">
+                        <h5 class="card-title">O Espetacular Homem Aranha 2 - Sinopse</h5>
+                            <p class="card-text">É ótimo ser o Homem-Aranha. Para Peter Parker, não há nada melhor do que se balançar entre arranha-céus, ser um herói e passar o tempo com Gwen. Mas ser o Homem-Aranha tem um preço: apenas ele pode proteger os nova-iorquinos dos inacreditáveis vilões que ameaçam a cidade. Com o surgimento de Electro (Jamie Foxx), Peter precisa confrontar um inimigo muito mais poderoso do que ele. E com o retorno de seu velho amigo Harry Osborn, Peter percebe que todos os seus inimigos têm uma coisa em comum: a OsCorp.</p>
+                            <h5 class="card-text"><button id="amazing" class="btn btn-primary" type="submit"><a target="_blank" id="indicacoes" href="https://www.youtube.com/watch?v=DlM2CWNTQ84">Veja o Trailer</a></button></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer text-center">
+        <p><b>&copy; 2023 Filmes e Séries. Todos os direitos reservados.</b></p>
+        <p>Desenvolvido por João Pedro Fernandes</p>
+        <p>Orientado por Dieimes Nunes de Souza</p>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <script src="javascript/index.js"></script>
+
+</html>
